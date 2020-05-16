@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ridhwaananayetullah/CLionProjects/mage/gapbuffer.cpp
+gapbuffer.h
+/Users/ridhwaananayetullah/CLionProjects/mage/gapbuffer.h
+string
+-
+
+/Users/ridhwaananayetullah/CLionProjects/mage/gapbuffer.h
+string
+-
+iostream
+-
+
+/Users/ridhwaananayetullah/CLionProjects/mage/main.cpp
+iostream
+-
+gapbuffer.h
+/Users/ridhwaananayetullah/CLionProjects/mage/gapbuffer.h
+
