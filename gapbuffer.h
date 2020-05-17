@@ -7,6 +7,9 @@
 #include <string>
 #include <iostream>
 
+
+const char GAP = '_';
+
 using string = std::string;
 
 enum Direction {
@@ -18,13 +21,14 @@ enum Direction {
 
 class GapBuffer {
 public:
-    GapBuffer(int len) : gap_start(0), gap_end(len), gap_len(gap_end - gap_start + 1), cursor_pos(0){
+    GapBuffer(int len) : gap_start(0), gap_end(len - 1), gap_len(gap_end - gap_start), cursor_pos(0){
         string buf(len, '_');
         buffer = buf;
     }
+
     void insert(string text);
-    void move(Direction d);
-    void printBufferWithIndexPtrs();
+    void move(Direction d, int amount);
+    void printBufferPtrs();
     string printBuffer();
 
 private:
