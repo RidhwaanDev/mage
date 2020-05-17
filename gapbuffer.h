@@ -9,10 +9,10 @@
 #include <iostream>
 
 
-#define GAP '_';
+#define GAP '_'
+#define MAX_GAP_LEN 30
 
 using string = std::string;
-
 enum Direction {
     UP,
     DOWN,
@@ -29,10 +29,16 @@ public:
 
     friend std::ostream& operator<<(std::ostream& os, const GapBuffer& buffer);
 
+
+    void grow();
     void insert(string text);
     void erase(int amount);
     void move(Direction d, int amount);
     void printBufferPtrs();
+    uint16_t getGapLength(){
+        return gap_end - gap_start;
+    }
+
     string printBuffer() const;
 
 private:

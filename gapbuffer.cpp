@@ -4,20 +4,40 @@
 
 #include "gapbuffer.h"
 #include <string>
+#include <dns_sd.h>
 
 
 // the cursor should always be at the start of the gap
-
 void GapBuffer::insert(string text){
-    if(text.size() > gap_len){
-        // grow the gap
-    } else {
+    if(text.size() > getGapLength() || gap_start == gap_end){
+        grow();
+    }
         // do the actual insertion
         buffer.replace(gap_start, text.size(), text);
         // move gap start up
         gap_start += text.size();
-    }
 }
+// grow is called when text we want to insert into the gap is greater than the gap size
+// grow gap size
+void GapBuffer::grow(){
+    string bigger_buffer(buffer.size()  * 2 , GAP);
+    // text before gap
+    for(int i = 0; i < gap_start; i++){
+        bigger_buffer[i] = buffer[i];
+    }
+
+    // text after
+    int backptr = 0;
+    for(int i = buffer.size() - 1; i > gap_end ; i--){
+        bigger_buffer[bigger_buffer.size() - 1 - backptr] = buffer[i];
+        backptr++;
+    }
+
+    buffer = bigger_buffer;
+    gap_end = bigger_buffer.size() - 1 - backptr;
+}
+
+
 
 // backspace erase
 void GapBuffer::erase(int amount){
@@ -46,7 +66,7 @@ void GapBuffer::printBufferPtrs(){
     std::cout << std::endl;
     std::cout << "gap_start " << gap_start << std::endl;
     std::cout << "gap_end " << gap_end << std::endl;
-    std::cout << "gap_len " << gap_len << std::endl;
+    std::cout << "gap_len " << getGapLength() << std::endl;
     std::cout << "buffer_len " << buffer.size() << std::endl;
 }
 // moves the cursor
