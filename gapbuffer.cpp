@@ -37,15 +37,10 @@ void GapBuffer::grow(){
     gap_end = bigger_buffer.size() - 1 - backptr;
 }
 
-
-
 // backspace erase
 void GapBuffer::erase(int amount){
  // just move the gap start back
- if(gap_start <= 0){
-     return;
- }
- while(amount > 0){
+ while(amount > 0 && gap_start > 0){
      gap_start = gap_start - 1;
      buffer[gap_start] = GAP;
      amount = amount - 1;
@@ -118,6 +113,3 @@ string GapBuffer::printBuffer() const {
     std::cout << buffer << std::endl;
     return buffer;
 }
-
-
-

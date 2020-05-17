@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/ridhwaananayetullah/CLionProjects/mage/file.cpp">
+			<Option target="mage"/>
+		</Unit>
+		<Unit filename="/Users/ridhwaananayetullah/CLionProjects/mage/file.h">
+			<Option target="mage"/>
+		</Unit>
 		<Unit filename="/Users/ridhwaananayetullah/CLionProjects/mage/gapbuffer.cpp">
 			<Option target="mage"/>
 		</Unit>

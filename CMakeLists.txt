@@ -3,4 +3,4 @@ project(mage)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(mage main.cpp gapbuffer.cpp gapbuffer.h)
+add_executable(mage main.cpp gapbuffer.cpp gapbuffer.h file.cpp file.h)

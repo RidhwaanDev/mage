@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/ridhwaananayetullah/CLionProjects/mage/file.h
+gapbuffer.h
+/Users/ridhwaananayetullah/CLionProjects/mage/gapbuffer.h
+
 /Users/ridhwaananayetullah/CLionProjects/mage/gapbuffer.h
 string
 -
@@ -17,4 +21,6 @@ iostream
 -
 gapbuffer.h
 /Users/ridhwaananayetullah/CLionProjects/mage/gapbuffer.h
+file.h
+/Users/ridhwaananayetullah/CLionProjects/mage/file.h
 

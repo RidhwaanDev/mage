@@ -1,21 +1,13 @@
 #include <iostream>
 
 #include "gapbuffer.h"
+#include "file.h"
 
 using namespace std;
 
 int main() {
-    GapBuffer buffer(10);
-    buffer.insert("hello");
-    buffer.printBuffer();
-    buffer.move(LEFT,3);
-    buffer.printBuffer();
-    buffer.insert("aa");
-    buffer.insert("bb");
-    buffer.printBuffer();
-    buffer.insert("GROW");
-    buffer.insert("GROW2");
-    buffer.move(LEFT,8);
+    GapBuffer buffer(2);
+    GBFile::readFileIntoGapBuffer(buffer,"test.js");
     buffer.printBuffer();
     buffer.printBufferPtrs();
     return 0;

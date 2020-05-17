@@ -123,6 +123,33 @@ mage/fast:
 	$(MAKE) -f CMakeFiles/mage.dir/build.make CMakeFiles/mage.dir/build
 .PHONY : mage/fast
 
+file.o: file.cpp.o
+
+.PHONY : file.o
+
+# target to build an object file
+file.cpp.o:
+	$(MAKE) -f CMakeFiles/mage.dir/build.make CMakeFiles/mage.dir/file.cpp.o
+.PHONY : file.cpp.o
+
+file.i: file.cpp.i
+
+.PHONY : file.i
+
+# target to preprocess a source file
+file.cpp.i:
+	$(MAKE) -f CMakeFiles/mage.dir/build.make CMakeFiles/mage.dir/file.cpp.i
+.PHONY : file.cpp.i
+
+file.s: file.cpp.s
+
+.PHONY : file.s
+
+# target to generate assembly for a file
+file.cpp.s:
+	$(MAKE) -f CMakeFiles/mage.dir/build.make CMakeFiles/mage.dir/file.cpp.s
+.PHONY : file.cpp.s
+
 gapbuffer.o: gapbuffer.cpp.o
 
 .PHONY : gapbuffer.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... mage"
+	@echo "... file.o"
+	@echo "... file.i"
+	@echo "... file.s"
 	@echo "... gapbuffer.o"
 	@echo "... gapbuffer.i"
 	@echo "... gapbuffer.s"

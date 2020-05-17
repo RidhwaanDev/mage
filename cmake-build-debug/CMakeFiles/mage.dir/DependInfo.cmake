@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/ridhwaananayetullah/CLionProjects/mage/file.cpp" "/Users/ridhwaananayetullah/CLionProjects/mage/cmake-build-debug/CMakeFiles/mage.dir/file.cpp.o"
   "/Users/ridhwaananayetullah/CLionProjects/mage/gapbuffer.cpp" "/Users/ridhwaananayetullah/CLionProjects/mage/cmake-build-debug/CMakeFiles/mage.dir/gapbuffer.cpp.o"
   "/Users/ridhwaananayetullah/CLionProjects/mage/main.cpp" "/Users/ridhwaananayetullah/CLionProjects/mage/cmake-build-debug/CMakeFiles/mage.dir/main.cpp.o"
   )
