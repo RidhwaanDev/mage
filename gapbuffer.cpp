@@ -16,9 +16,30 @@ void GapBuffer::insert(string text){
         buffer.replace(gap_start, text.size(), text);
         // move gap start up
         gap_start += text.size();
-        // move cursor
-         // move(RIGHT,1);
     }
+}
+
+// backspace erase
+void GapBuffer::erase(int amount){
+ // just move the gap start back
+ if(gap_start <= 0){
+     return;
+ }
+ while(amount > 0){
+     gap_start = gap_start - 1;
+     buffer[gap_start] = GAP;
+     amount = amount - 1;
+ }
+}
+
+std::ostream& operator<<(std::ostream& os, const GapBuffer& gb){
+   for(int i = 0; i < gb.gap_start; i++){
+       os << gb.buffer[i];
+   }
+    for(int i = gb.gap_end + 1; i < gb.buffer.size(); i++){
+        os << gb.buffer[i];
+    }
+    return os;
 }
 
 void GapBuffer::printBufferPtrs(){
@@ -73,7 +94,7 @@ void GapBuffer::move(Direction d, int amount = 1){
 }
 
 
-string GapBuffer::printBuffer(){
+string GapBuffer::printBuffer() const {
     std::cout << buffer << std::endl;
     return buffer;
 }
