@@ -11,14 +11,16 @@ FileIOStatus GBFile::readFileIntoGapBuffer(GapBuffer &buffer, const std::string&
     std::ifstream file(filename);
     if(file.is_open()){
       while(getline(file,line)){
-          buffer.insert(line);
+           buffer.insert(line);
       }
     } else {
         return ERROR;
     }
 }
 
-FileIOStatus GBFile::writeGapBufferToFile(const GapBuffer &buffer, const std::string &filename) {}
+FileIOStatus GBFile::writeGapBufferToFile(const GapBuffer &buffer, const std::string &filename) {
+
+}
 
 
 

@@ -109,6 +109,7 @@ void GapBuffer::move(Direction d, int amount = 1){
 }
 
 
+
 string GapBuffer::printBuffer() const {
     std::cout << buffer << std::endl;
     return buffer;

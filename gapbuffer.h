@@ -22,7 +22,7 @@ enum Direction {
 
 class GapBuffer {
 public:
-    GapBuffer(int len) : gap_start(0), gap_end(len - 1), gap_len(gap_end - gap_start) {
+    GapBuffer(int len) : gap_start(0), gap_end(len - 1), gap_len(gap_end - gap_start + 1) {
         string buf(len, '_');
         buffer = buf;
     }
@@ -40,6 +40,8 @@ public:
     }
 
     string printBuffer() const;
+    string getBuffer() const;
+    string getContentss() const;
 
 private:
     string buffer;
