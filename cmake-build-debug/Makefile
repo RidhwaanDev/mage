@@ -204,6 +204,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/mage.dir/build.make CMakeFiles/mage.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+window.o: window.cpp.o
+
+.PHONY : window.o
+
+# target to build an object file
+window.cpp.o:
+	$(MAKE) -f CMakeFiles/mage.dir/build.make CMakeFiles/mage.dir/window.cpp.o
+.PHONY : window.cpp.o
+
+window.i: window.cpp.i
+
+.PHONY : window.i
+
+# target to preprocess a source file
+window.cpp.i:
+	$(MAKE) -f CMakeFiles/mage.dir/build.make CMakeFiles/mage.dir/window.cpp.i
+.PHONY : window.cpp.i
+
+window.s: window.cpp.s
+
+.PHONY : window.s
+
+# target to generate assembly for a file
+window.cpp.s:
+	$(MAKE) -f CMakeFiles/mage.dir/build.make CMakeFiles/mage.dir/window.cpp.s
+.PHONY : window.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +249,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... window.o"
+	@echo "... window.i"
+	@echo "... window.s"
 .PHONY : help
 
 

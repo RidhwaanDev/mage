@@ -95,6 +95,12 @@
 		<Unit filename="/Users/ridhwaananayetullah/CLionProjects/mage/main.cpp">
 			<Option target="mage"/>
 		</Unit>
+		<Unit filename="/Users/ridhwaananayetullah/CLionProjects/mage/window.cpp">
+			<Option target="mage"/>
+		</Unit>
+		<Unit filename="/Users/ridhwaananayetullah/CLionProjects/mage/window.h">
+			<Option target="mage"/>
+		</Unit>
 		<Unit filename="/Users/ridhwaananayetullah/CLionProjects/mage/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

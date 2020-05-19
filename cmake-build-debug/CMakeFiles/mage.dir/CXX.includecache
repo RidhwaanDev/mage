@@ -19,6 +19,8 @@ iostream
 /Users/ridhwaananayetullah/CLionProjects/mage/main.cpp
 iostream
 -
+ncurses.h
+-
 gapbuffer.h
 /Users/ridhwaananayetullah/CLionProjects/mage/gapbuffer.h
 file.h

@@ -12,3 +12,6 @@ CMakeFiles/mage.dir/main.cpp.o: ../file.h
 CMakeFiles/mage.dir/main.cpp.o: ../gapbuffer.h
 CMakeFiles/mage.dir/main.cpp.o: ../main.cpp
 
+CMakeFiles/mage.dir/window.cpp.o: ../window.cpp
+CMakeFiles/mage.dir/window.cpp.o: ../window.h
+

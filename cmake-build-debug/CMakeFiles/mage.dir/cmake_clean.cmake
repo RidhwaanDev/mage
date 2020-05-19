@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/mage.dir/file.cpp.o"
   "CMakeFiles/mage.dir/gapbuffer.cpp.o"
   "CMakeFiles/mage.dir/main.cpp.o"
+  "CMakeFiles/mage.dir/window.cpp.o"
   "mage"
   "mage.pdb"
 )
